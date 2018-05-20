@@ -1,0 +1,56 @@
+
+/* ==================== Small screen ====================== */
+
+@media only screen and (max-width: 425px) {
+    nav {
+        line-height: 30px;
+    }
+    nav h1 a {
+        font-size: 12pt;
+    }
+    
+    .filter-options {
+        flex-direction: column;
+    }
+    .filter-options select{
+        margin-bottom: 0;
+    }
+    #restaurants-list li {
+        flex: 1 0 0;
+    } 
+}
+
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    
+   /* .filter-options {
+        flex-direction: column;
+    }*/
+    
+    #restaurants-list li {
+        flex-basis: 40%;
+        max-width: calc((100% - 40px)/2);
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+   /* .filter-options h2{
+        font-size: 1.2rem;
+    }*/
+
+    #restaurants-list {
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #restaurants-list li {
+        max-width: calc((100% - 60px)/3);
+    }
+    
+	/*#restaurants-list li {
+        width: 270px;
+    }*/
+	
+
+} 

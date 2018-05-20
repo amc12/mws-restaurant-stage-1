@@ -1,0 +1,31 @@
+{
+  "name": "mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "progressive web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amc12/mws-restaurant-stage-1.git"
+  },
+  "author": "alice canianopol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amc12/mws-restaurant-stage-1/issues"
+  },
+  "homepage": "https://github.com/amc12/mws-restaurant-stage-1#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1"
+  }
+}
