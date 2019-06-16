@@ -2,13 +2,15 @@
  * Common database helper functions.
  */
 class DBHelper {
+
   /**
    * Database URL.
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000; // Change this to your server port
-    return `http://localhost:${port}/data/restaurants.json`;
+    return 'http://www.mocky.io/v2/5d0647143000008000051c30';
+    //const port = 8000; // Change this to your server port
+
   }
 
   /**
@@ -20,8 +22,11 @@ class DBHelper {
     xhr.onload = () => {
       if (xhr.status === 200) {
         // Got a success response from server!
+        console.log('yeeey');
         const json = JSON.parse(xhr.responseText);
         const restaurants = json.restaurants;
+        console.log('bumtzi', restaurants);
+
         callback(null, restaurants);
       } else {
         // Oops!. Got an error from server.

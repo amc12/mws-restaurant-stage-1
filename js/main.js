@@ -1,6 +1,6 @@
-let restaurants,
-  neighborhoods,
-  cuisines
+let restaurants;
+let neighborhoods
+let cuisines
 let map
 const markers = []
 
@@ -123,9 +123,11 @@ resetRestaurants = (restaurants) => {
   ul.innerHTML = ''
 
   // Remove all map markers
-  self.markers.forEach(m => m.setMap(null))
-  self.markers = []
-  self.restaurants = restaurants
+  if (self.markers) {
+    self.markers.forEach(marker => marker.setMap(null));
+  }
+  self.markers = [];
+  self.restaurants = restaurants;
 }
 
 /**
