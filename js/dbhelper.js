@@ -8,7 +8,7 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    return 'http://www.mocky.io/v2/5d0647143000008000051c30';
+    return 'https://www.mocky.io/v2/5d0647143000008000051c30';
     //const port = 8000; // Change this to your server port
 
   }
